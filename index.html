@@ -132,38 +132,36 @@
         }
 
         .bts-section {
-    padding: 50px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 區域陰影 */
-    text-align: center;
-    position: relative; /* 父容器設置為相對定位 */
-}
+            padding: 25px;
+            text-align: center;
+            position:relative;
+        }
 
-/* 圖像容器 */
-.bts-image-text {
-    position: relative;
-    display: flex;
-    align-items: center; /* 垂直居中對齊 */
-    justify-content: flex-start; /* 圖片從左側開始 */
-}
 
-/* 圖片樣式 */
-.bts-image-text img {
-    width: 70%; /* 圖像佔60%的寬度 */
-    height: auto;
-    border-radius: 15px; /* 圖片圓角效果 */
-    object-fit: cover; /* 保持圖片比例 */
-    position: relative;
-    z-index: 1; /* 圖像在文字背景之上 */
-    mask-image: linear-gradient(to right, black 70%, transparent 100%); /* 從左到右漸層淡化 */
-    -webkit-mask-image: linear-gradient(to right, black 70%, transparent 100%);
-}
+        .bts-image-text {
+            position: relative;
+            display: flex;
+            align-items: center; 
+            justify-content: flex-start; 
+        }
+
+        .bts-image-text img {
+            width: 70%; 
+            height: auto;
+            border-radius: 15px; 
+            object-fit: cover; 
+            position: relative;
+            z-index: 1; 
+            mask-image: linear-gradient(to right, black 70%, transparent 100%); 
+            -webkit-mask-image: linear-gradient(to right, black 70%, transparent 100%);
+        }
 
         .bts-text {
             position: absolute;
-            right: 5%; /* 靠近圖片右側 */
-            width: 30%; /* 文字佔30%的寬度 */
-            z-index: 2; /* 確保文字在圖片之上 */
-            color: #F2F7FF; /* 文字顏色 */
+            right: 5%; 
+            width: 30%;
+            z-index: 2; 
+            color: #F2F7FF; 
             text-align:center ;
         }
 
@@ -274,7 +272,7 @@
 
         .solo-item {
             display: flex;
-            align-items: center; /* 垂直居中 */
+            align-items: center; 
             gap: 20px; 
         }
 
@@ -302,15 +300,15 @@
 
         .bt21-item {
             display: flex;
-            flex-direction: row; /* 橫向排列 */
-            align-items: center; /* 垂直居中 */
+            flex-direction: row; 
+            align-items: center; 
             border-radius: 10px; 
             padding: 20px;
         }
 
         .bt21-item img {
             width: 160px;
-            margin-right: 20px; /* 文字間距 */
+            margin-right: 20px;
         }
 
         .endpage{
@@ -330,11 +328,11 @@
         <nav>
             <ul class="menu">
                 <li>
-                    <a href="#">BTS</a>
+                    <a href="#index">BTS</a>
                     <ul class="submenu">
                         <li><a href="#about">團體專輯</a></li>
                         <li>
-                            <a href="#">成員</a>
+                            <a href="#member">成員</a>
                             <ul class="submenu dash">
                                 <li><a href="#rm">RM</a></li>
                                 <li><a href="#jin">JIN</a></li>
@@ -348,14 +346,14 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">紀錄片</a>
+                    <a href="#log">紀錄片</a>
                     <ul class="submenu">
                         <li><a href="#worldtour">BTS紀錄片</a></li>
                         <li><a href="#soloprojects">個人專輯紀錄片</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#">BT21</a>
+                    <a href="#bt21">BT21</a>
                     <ul class="submenu">
                         <li><a href="#role intro">角色介紹</a></li>
                     </ul>
@@ -365,7 +363,7 @@
     </header>
 
     <main class="container">
-        <section id="about" class="bts-section">
+        <section id="index" class="bts-section">
                 <div class="bts-image-text">
                     <img src="image/bts_photo1.jpg" alt="BTS Group">
                     <div class="bts-text">
@@ -380,7 +378,7 @@
             </section>
             
 
-        <section id="group" class="album-section">
+        <section id="about" class="album-section">
             <h2>團體專輯</h2>
             <div class="album-grid">
                 <a href="https://youtu.be/owjVpYCmwcg?si=b55IM_nRUWfSda9n" target="_blank" class="album-card">
@@ -462,7 +460,7 @@
             </div>
         </section>
 
-        <!-- 成員資訊區域 -->
+        <!-- 成員資訊 -->
         <section id="rm" class="album-section">
             <h2>RM（Rapper Monster / 金南俊 / Kim Nam-joon）</h2>
             <div class="info-box">
@@ -720,7 +718,7 @@
         </section>
                 
  
-        <!-- 紀錄片區域 -->
+        <!-- 紀錄片 -->
         <section id="worldtour">
             <h2>BTS紀錄片</h2>
             <div class="solo-album-container">
@@ -805,7 +803,8 @@
                 </div>
             </div>
         </section>
-
+        
+        <!--bt21-->
         <div id="role intro">
             <span class="text-center"><h2>BT21</h2><p>BT21 是 BTS 與 LINE FRIENDS 合作創造的卡通角色系列，每位成員參與設計了專屬角色。</p><p>這八個角色（TATA、KOYA、RJ、SHOOKY、MANG、CHIMMY、COOKY 和 VAN）展現了各自獨特的性格與魅力，深受粉絲喜愛，是 BTS 文化的重要延伸。</p></span>
                 
