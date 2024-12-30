@@ -328,7 +328,7 @@
         <nav>
             <ul class="menu">
                 <li>
-                    <a href="#index">BTS</a>
+                    <a href="javascript:void(0);" onclick="scrollToTop('index')">BTS</a>
                     <ul class="submenu">
                         <li><a href="#about">團體專輯</a></li>
                         <li>
@@ -376,7 +376,14 @@
                     </div>
                 </div>
             </section>
-            
+            <script>
+                function scrollToTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            </script>                    
 
         <section id="about" class="album-section">
             <h2>團體專輯</h2>
@@ -806,7 +813,11 @@
         
         <!--bt21-->
         <div id="role intro">
-            <span class="text-center"><h2>BT21</h2><p>BT21 是 BTS 與 LINE FRIENDS 合作創造的卡通角色系列，每位成員參與設計了專屬角色。</p><p>這八個角色（TATA、KOYA、RJ、SHOOKY、MANG、CHIMMY、COOKY 和 VAN）展現了各自獨特的性格與魅力，深受粉絲喜愛，是 BTS 文化的重要延伸。</p></span>
+            <span class="text-center">
+                <h2>BT21</h2>
+                <p>BT21 是 BTS 與 LINE FRIENDS 合作創造的卡通角色系列，每位成員參與設計了專屬角色。</p>
+                <p>這八個角色（TATA、KOYA、RJ、SHOOKY、MANG、CHIMMY、COOKY 和 VAN）展現了各自獨特的性格與魅力，深受粉絲喜愛，是 BTS 文化的重要延伸。</p>
+            </span>
                 
             <div class="bt21-grid">
                 <div class="bt21-item">
