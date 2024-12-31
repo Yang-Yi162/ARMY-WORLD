@@ -149,7 +149,6 @@
             width: 70%; 
             height: auto;
             border-radius: 15px; 
-            object-fit: cover; 
             position: relative;
             z-index: 1; 
             mask-image: linear-gradient(to right, black 70%, transparent 100%); 
@@ -165,7 +164,11 @@
             text-align:center ;
         }
 
-       
+        #index {
+            padding: 30px;
+            scroll-margin-top: 80px; /* Header 的高度，防止遮擋 */
+        }
+
         section {
             margin-bottom: 10px;
             border-bottom: 3px solid #C9DCFF;
@@ -328,7 +331,7 @@
         <nav>
             <ul class="menu">
                 <li>
-                    <a href="javascript:void(0);" onclick="scrollToTop('index')">BTS</a>
+                    <a href="#index">BTS</a>
                     <ul class="submenu">
                         <li><a href="#about">團體專輯</a></li>
                         <li>
@@ -376,14 +379,7 @@
                     </div>
                 </div>
             </section>
-            <script>
-                function scrollToTop() {
-                    window.scrollTo({
-                        top: 0,
-                        behavior: 'smooth'
-                    });
-                }
-            </script>                    
+            
 
         <section id="about" class="album-section">
             <h2>團體專輯</h2>
